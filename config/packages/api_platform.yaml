@@ -1,15 +1,16 @@
 api_platform:
+    title: 'Picorez REST API'
+    description: 'A Symfony API to manage a mobile application'
+    version: '1.0.0'
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
     patch_formats:
         json: ['application/merge-patch+json']
+    formats:
+        json:
+            mime_types: [ 'application/json' ]
     swagger:
         versions: [3]
-     http_cache:
-        invalidation:
-            enabled: true
-            varnish_urls: ['%env(VARNISH_URL)%']
-    max_age: 0
-    shared_max_age: 3600
-    vary: ['Content-Type', 'Authorization', 'Origin']
-    public: true
+    enable_swagger_ui: false
+    defaults:
+        pagination_enabled: false
