@@ -1,0 +1,13 @@
+api_platform:
+    title: 'Picorez REST API'
+    description: 'A Symfony API to manage a mobile application'
+    version: '1.0.0'
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    formats:
+        json:
+            mime_types: [ 'application/json' ]
+    defaults:
+        pagination_enabled: false
