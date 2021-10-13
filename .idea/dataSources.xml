@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/mangalistdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="heroku_497e6fd6d009a5d@eu-cdbr-west-01.cleardb.com" uuid="73d65ad9-4c4f-4dca-9561-37a26fd65a09">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://eu-cdbr-west-01.cleardb.com/heroku_497e6fd6d009a5d?reconnect=true</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
