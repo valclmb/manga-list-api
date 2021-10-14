@@ -27,12 +27,12 @@ class Manga
     private $name;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string", length=3)
      */
     private $isRead;
 
     /**
-     * @ORM\Column(type="string")
+     * @ORM\Column(type="string",length=3)
      */
     private $isStart;
 
@@ -43,7 +43,7 @@ class Manga
 
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string",length=3)
      */
     private $isOver;
 
@@ -106,12 +106,12 @@ class Manga
     }
 
 
-    public function getIsOver(): ?bool
+    public function getIsOver(): ?string
     {
         return $this->isOver;
     }
 
-    public function setIsOver(bool $isOver): self
+    public function setIsOver(string $isOver): self
     {
         $this->isOver = $isOver;
 
