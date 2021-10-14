@@ -65,7 +65,7 @@
         },
         "post-install-cmd": [
             "@auto-scripts",
-            "symfony console doctrine:schema:update"
+            "symfony console doctrine:schema:update --force"
         ],
         "post-update-cmd": [
             "@auto-scripts"
