@@ -27,7 +27,7 @@ class Manga
     private $name;
 
     /**
-     * @ORM\Column(type="boolean")
+     * @ORM\Column(type="string")
      */
     private $isRead;
 
@@ -69,12 +69,12 @@ class Manga
         return $this;
     }
 
-    public function getIsRead(): ?bool
+    public function getIsRead(): ?string
     {
         return $this->isRead;
     }
 
-    public function setIsRead(bool $isRead): self
+    public function setIsRead(string $isRead): self
     {
         $this->isRead = $isRead;
 
