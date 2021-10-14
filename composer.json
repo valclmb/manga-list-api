@@ -64,7 +64,8 @@
             "requirements-checker": "script"
         },
         "post-install-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "symfony console doctrine:schema:update"
         ],
         "post-update-cmd": [
             "@auto-scripts"
